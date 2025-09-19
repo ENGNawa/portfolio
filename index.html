@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="./scripts/app.js"></script>
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', saved);
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+
+  </div><button id="themeToggle" aria-label="Toggle theme">☽</button>
+  </div>
+
+  <nav class="Nav">
+    <a href="#me" class="logo">nawa</a>
+    <ul class="nav__links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#experience"></a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">connect</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="me" class="mainTop snap__section">
+
+      <div class="mainTop_show showNow">
+        <div class="main__icons">
+          <div class="mainCircle"></div>
+          <div class="mainCircle"></div>
+          <div class="mainCircle"></div>
+        </div>
+
+        <h1>Hey, I’m Nawa 👩‍💻</h1>
+        <p class="main__subtitle"><span id="typewrite"></span></p>
+
+        <div class="main__actions">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contect" class="btn btn2">Contact Me</a>
+        </div>
+    </section>
+    <section id="about">
+      <div class="bigBox">
+        <article class="smallBox showNow">
+          <div class="aboutRow">
+            <div class="avatarWrapper">
+              <img src="LinkedinProfile.png" alt="Profile" class="aboutPic">
+            </div>
+
+            <div class="aboutText">
+              <h2 class="aboutTitle">About me</h2>
+              <p>Hi, I’m Noni — a Software Engineer who enjoys bringing ideas to life through clean and creative code.
+                I specialize in building user-friendly web applications, working across both front-end and back-end to
+                deliver smooth experiences.
+                I’m known for being a quick learner, detail-oriented, and someone who thrives in
+                collaborative environments
+              </p>
+
+              <!-- كل الأيقونات والزر داخل بلوك واحد -->
+              <div class="aboutActions">
+                <div class="socials">
+                  <a class="social" href="http://linkedin.com/in/nawa-al-asmii-93959323b" target="_blank"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a class="social" href="https://github.com/ENGNawa" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a class="social" href="mailto:Nawa.b.alasmii@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a class="social cv-btn" href="./assets/Nawa_CV.pdf" download aria-label="Download CV">
+                    <i class="fas fa-file-download"></i>
+                    Download CV </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h1></h1>
+    </section>
+    <section id="skills">
+      <article class="showNow">
+        <h2>Skills</h2>
+        <h3>front-end development</h3>
+        <div class="skillsBox showNow">
+          <div class="skill_card">HTML</div>
+          <div class="skill_card"> CSS</div>
+          <div class="skill_card"> JavaScript</div>
+          <div class="skill_card"> React.js</div>
+          <div class="skill_card"> UI/UX</div>
+
+        </div>
+      </article>
+
+      <article class="showNow">
+        <h3>back-end development</h3>
+        <div class="skillsBox showNow">
+          <div class="skill_card">Node.js</div>
+          <div class="skill_card">RESTful APIs</div>
+        </div>
+      </article>
+      <article class="showNow">
+        <h3>Tools</h3>
+        <div class="skillsBox showNow">
+          <div class="skill_card">VS Code</div>
+          <div class="skill_card">npm</div>
+          <div class="skill_card">Git& GitHub</div>
+        </div>
+      </article>
+      <article class="showNow">
+        <h3>Other</h3>
+        <div class="skillsBox showNow">
+          <div class="skill_card">System analysis</div>
+          <div class="skill_card">Database(SQL)</div>
+          <div class="skill_card">AI integration</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2 class="experience-title"> Education & Activities </h2>
+
+      <div class="exp-grid">
+        <!-- Education -->
+        <article class="smallBox">
+          <h3>Education</h3>
+          <p><strong>Bachelor of Software Engineering</strong><br>
+            University of Hail (2020 – 2023)</p>
+        </article>
+
+        <!-- Club -->
+        <article class="smallBox">
+          <h3>Software Engineering Club</h3>
+          <p>Active Member (2020 – 2023)</p>
+        </article>
+
+        <!-- Events -->
+        <article class="smallBox">
+          <h3>Events</h3>
+          <ul>
+            <li>LEAP 2024</li>
+            <li>Black Hat</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="coop">
+      <div class="bigBox">
+        <article class="smallBox showNow">
+          <h2>COOP -Kingfahad medical city</h2>
+          <ul>
+            <li>
+              System Managment && Software development
+            </li>
+            <li>
+              network support
+            </li>
+          </ul>
+          <ol class="timelinee">
+            <li>
+              <div class="circle"></div>
+              <div class="details">
+                <p>Requirement Elicitation · System Analysis</p>
+              </div>
+            </li>
+            <li>
+              <div class="circle"></div>
+              <div class="details">
+                <p> HTML · CSS · JavaScript · API Testing</p>
+              </div>
+            </li>
+            <li>
+              <div class="circle"></div>
+              <div class="details">
+
+                <p>SQL · Business Intelligence (BI)</p>
+              </div>
+            </li>
+            <li>
+              <div class="circle"></div>
+              <div class="details">
+
+                <p> Signatures Project · ASP.NET Web Forms</p>
+              </div>
+            </li>
+            <li>
+              <div class="circle"></div>
+              <div class="details">
+
+                <p>ASP.NET MVC · Mobile App (UI & Testing)</p>
+              </div>
+            </li>
+            <li>
+              <div class="circle"></div>
+              <div class="details">
+                <p>Final Project Documentation · Presentation</p>
+
+
+              </div>
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="projects">
+      <h2>Project</h2>
+      <div class="bigBox">
+        <article id="ruhMetroCard" class="project-card smallBox showNow">
+
+          <a href="#" class="edge-tab right" id="openDetail">concept →</a>
+          <a href="#" class="edge-tab left" id="closeDetail" aria-label="Back">← back</a>
+
+
+
+          <div class="ruh-split">
+            <!-- Panel 1: الصور/السلايدر -->
+            <div class="panel panel-concept">
+              <div class="slider" data-auto="true">
+                <img src="ruh1.png" alt="screenshot1" width="200" height="180" class="active" />
+                <img src="ruh2.png" alt="screenshot2" width="200" height="180" />
+                <img src="ruh3.png" alt="screenshot3" width="200" height="180" />
+              </div>
+              <p class="muted">
+                The RuhMetro project reimagines Riyadh Metro as more than just transportation —
+                it’s designed as an interactive platform that helps residents and visitors explore
+                the city with ease. By combining clean design, bilingual support, and the ability
+                to discover nearby landmarks like universities, malls, and cafes, the concept aims
+                to make public transit more engaging, social, and user-friendly for everyone.
+              </p>
+            </div>
+
+            <!-- Panel 2: التفاصيل  -->
+            <div class="panel panel-details">
+
+              <div class="detail-wrap">
+                <h3>Riyadh Metro – Concept Details</h3>
+                <p class="muted">
+                  RuhMetro is a scalable interactive concept for Riyadh Metro that can be expanded in the future to
+                  include real-time data and backend integration.
+
+
+
+                  The prototype currently features multiple pages:
+
+
+
+                  Home & Concept page: Introduces the idea and navigation experience.
+                  Station browsing page: Allows users to explore metro lines and stations.
+                  Categories page: Displays nearby spots such as universities, malls, pharmacies, and cafes.
+                  Explore page: Designed for social engagement, where users can share posts, comments, and feedback.
+                  Login & Registration pages: Provide user access and personalization.
+
+
+
+
+                  The project is both a social activity and a community service tool, aiming to improve city navigation
+                  and make public transportation more engaging and user-friendly.
+
+                </p>
+                <h3>Tools & Tech</h3>
+                <div class="tools">
+                  <span class="chip">HTML</span>
+                  <span class="chip">CSS</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">Responsive UI</span>
+                  <span class="chip">ARIA basics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact snap__section">
+      <div class="container">
+        <h2>Let's Connect</h2>
+        <p class="lead">Interested in working together? I’d be glad to hear from you</p>
+
+        <div class="card">
+          <h3>Send a Message</h3>
+          <p class="muted">I'll get back to you as soon as possible.</p>
+
+          <form id="contactForm" action="https://formspree.io/f/mwpnzanv" method="POST">
+
+            <input type="text" name="takeMsg" style="display:none">
+            <input type="hidden" name="_subject" value="New message from portfolio">
+
+            <label class="sr-only" for="name">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required>
+            <label class="sr-only" for="email">Your Email</label>
+
+            <input id="email" name="email" type="email" placeholder="Your Email" required>
+            <label class="sr-only" for="subject">Subject</label>
+
+            <input id="subject" name="subject" type="text" placeholder="Subject">
+            <label class="sr-only" for="message">Your Message</label>
+
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" id="sendBtn">Send</button>
+            <p id="formMsg" class="form-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <div class="custom-cursor">❤</div>
+
+  <footer class="site-footer">
+    <p>© 2025 Nawa Alasmii — All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
